@@ -9,3 +9,7 @@ export { default as routerMiddleware } from "./middleware"
 export const ConnectedRouter = /*#__PURE__*/ createConnectedRouter(plainStructure)
 export const connectRouter = /*#__PURE__*/ createConnectRouter(plainStructure)
 export const { getLocation, getAction, getHash, getRouter, getSearch, createMatchSelector } = /*#__PURE__*/ createSelectors(plainStructure)
+
+export const setStateProp = (stateProp) => {
+  createSelectors.stateProp = stateProp
+}
